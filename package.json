@@ -1,0 +1,10 @@
+{
+  "name": "IsMySiteUp",
+  "description": "A website monitor the easy way, poll the website every so often and look for status codes from the server",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "express": "3.x",
+    "nodemailer": "0.7.0"
+  }
+}
