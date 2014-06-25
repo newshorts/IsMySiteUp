@@ -10,7 +10,7 @@ How it works?
 
 The app is very simple. It runs a node process with forever and polls your
 website at a predetermined interval. If it's unable to connect/doesn't receive
-a status code of 200 or 304 (not modified) it will alert you that your website
+a status code in the 200s or 300s it will alert you that your website
 is unavailable.
 
 Setup and Installation
