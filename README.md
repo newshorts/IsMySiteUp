@@ -13,6 +13,29 @@ website at a predetermined interval. If it's unable to connect/doesn't receive
 a status code of 200 or 304 (not modified) it will alert you that your website
 is unavailable.
 
+Setup and Installation
+----------------------
+
+1. Download and install the IsMySiteUp repo.
+2. Create a **.env** file in the site root, or rename the .env_example file to **.env**.
+3. Modify the .env file with your settings.
+4. Run the node process (instructions below)
+
+Example .env File
+-----------------
+
+Within your env file you can configure several characteristics of the monitoring process.
+```
+DEV_ENV=local # an environmental variable (can be used for modifying the setup)
+PORT=5050 # not really important, but this setup could host a web page
+NOTIFICATION_METHOD=email # for now, the only option here is email, but I'm hoping to add text message support soon
+POLLING_INTERVAL=5 # how many seconds should we wait between calls to the server (polling)
+NOTIFICATION_INTERVAL=20 # how many minutes should we wait before we notify you again?
+TOLERANCE=5 # how many times should we get an error before we alert you?
+PROTOCOL=http # either http or https
+GMAIL_PHRASE=YOUR_GMAIL_PASSWORD # your gmail password
+```
+
 Running the Process
 -------------------
 
