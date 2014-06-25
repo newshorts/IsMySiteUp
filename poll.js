@@ -10,7 +10,7 @@ var http = require('http'),
     nodemailer = require("nodemailer");
 
 var app = express();
-var pages = ['http://54.189.214.115/'];
+var pages = ['http://galacontemplatingyou.com/'];
 var port = process.env.PORT || 5050;
 var tolerance = parseInt(process.env.TOLERANCE);
 var flagCount = 0;
@@ -115,7 +115,6 @@ function poll(page) {
     });
     
 }
-
 
 // DONE
 function getProtocol() {
